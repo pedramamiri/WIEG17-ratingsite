@@ -15,7 +15,7 @@ foreach($list as $value){
 ?>
 
 <form  action="listan.php" metod="get">
-<?php if (isset($_GET['name'])) {echo "Thanks ". $_GET['name'].",you are registerd for weekly bewsletter";}?>
+<?php if (isset($_GET['name'])) {echo "Thanks ". $_GET['name'].",you are registerd for weekly newsletter";}?>
 <h3>Register for weekly email newsletter</h3>
 Namn:        <input type="text"   name="name"/><br/>
 Email:       <input type="text"  name="email"/><br/>
