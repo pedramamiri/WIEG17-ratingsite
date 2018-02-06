@@ -110,13 +110,13 @@
     </div>
 </div>
 <?php
-define("pageName",$pageName);
 if($_GET == false ){
     $pageName = "home page";
 }else {
     $pageName = $_GET['id'];
 }
-echo "<h1>Welcome to $pageName </h1><br/>";
+define("PAGENAME",$pageName);
+echo "<h1>Welcome to ". constant("PAGENAME") ."</h1><br/>";
 if(!isset($_GET['id']) || $_GET['id'] == "Home page") {
 $test = " If albums had something of a soft landing on the pop landscape in 2017, then songs more than picked up the headline-grabbing slack.
 It was a year of Cardi B replacing Taylor Swift atop the Billboard Hot 100, of Rihanna and Justin Bieber dominating the calendar without so much as a solo lead single from either, of Camila Cabello and
