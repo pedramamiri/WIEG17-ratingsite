@@ -14,16 +14,14 @@ foreach($list as $value){
 
 ?>
 
-<form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"" metod="get">
+<form  action="listan.php" metod="get">
+<?php if (isset($_GET['name'])) {echo "Thanks ". $_GET['name'].",you are registerd for weekly bewsletter";}?>
 <h3>Register for weekly email newsletter</h3>
 Namn:        <input type="text"   name="name"/><br/>
 Email:       <input type="text"  name="email"/><br/>
 <input name="id" type="hidden" value="<?=$_GET['id'];?>" />
 <input type="submit"/>
 </form>
-<?php
-echo  "Thanks ". $_GET['name'].",you are registerd for weekly bewsletter";
-?>
 </pre>
 
 
